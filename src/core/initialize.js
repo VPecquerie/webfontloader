@@ -46,6 +46,8 @@ var WEBFONT_CONFIG = 'WebFontConfig';
 /**
  * @type {webfont.WebFont}
  */
+
+window = typeof window === 'undefined' ? null : window;
 var webFontLoader = new webfont.WebFont(window);
 
 if (INCLUDE_CUSTOM_MODULE) {
